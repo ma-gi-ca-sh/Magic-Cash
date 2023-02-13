@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="th.icon">
+    <style type="text/css">
+        body{
+        background:transparent;
+    
+        }
+          @font-face{
+            font-family: sevensegment;
+            src:url(Seven\ Segment.ttf);
+          }  
+        h1{
+            font-family: sevensegment;
+            font-size: 160%;
+            color: #0e0d0d;
+            
+        }
+ 
+ body{
+width: 800px;
+height: 700px;
+padding-left: 250px;
+background-color: aqua;
+}
+
+ .submit{
+   cursor: pointer;
+ }
+ fieldset{
+    border-radius: 50px;
+    background-color: rgb(201, 197, 192);
+ }
+ button{
+    border-radius: 20px;
+    border-color: black;
+ }
+ selection{
+    font-size: large;
+    font-weight: 500;
+ }
+ span{
+    font-size: larger;
+    font-weight: 500;
+ }
+ .title{
+    font-weight: 800;
+    font-size: larger;
+ }
+ button{
+    font-size: large;
+ }
+</style>
+    <title>1stque box</title>
+</head>
+    <body>
+        
+    <fieldset>
+    
+    <!---Quiz Box-->
+<div class="quiz_box"></div>
+
+    <div class="title"><h1>Questions</h1>DATE:11/FEB/2023</div>
+    <hr>
+    <div class="timer"></div>
+    <span class="time">Time </span>
+    <span class="timer_sec">06minutes</span>
+</button>
+<span>for<span> 10 <span>question</span><br>
+<p>NOTE: Do not quit from the page before completing your questions, since it will ask you for password to re-enter the page.Write down your answerers on piece of paper to copy and send to whatsapp link below.</p>
+<!--join timer from here-->
+<script>
+    var seconds=0;
+    function displayseconds(){
+        seconds +=1;
+        document.getElementById("secondsdisplay").innerText ="Your time duration is  360 seconds "+seconds+" seconds...";
+    }
+    setInterval(displayseconds,1000);
+    function redirectpage(){
+        window.location = "http://127.0.0.1:5500/2webpage.html"
+    }
+    setTimeout('redirectpage()',359000);
+</script>
+    
+</head>
+<body>
+    
+    <div id="secondsdisplay"></div>
+    
+    <div class="container"></div>
+    <h1 id="counter">06:00</h1>
+    <!--javascript-->
+    <script type="text/javascript">
+    var minute = 5;
+    var second = 60;
+    setInterval( function(){
+if(minute == 0 && second == 1){
+document.getElementById("counter").innerHTML = "00:00";
+}else{
+second--;
+if( second == 0){
+    minute --;
+    second = 60;
+    if(minute == 0){
+        minute = minute;
+    }
+}
+if(minute.toString().length == 1){
+    minute = "0" + minute;
+}
+if(second.toString(). length == 1){
+    second = "0" + second;
+}
+document.getElementById("counter").innerHTML = minute + ":" + second;
+    }
+    }, 1000)
+</script>
+<!--end of timer-->
+    
+</header>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>1.When did man’s age begin to decrease?
+    </span>
+    <br><br>
+    
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A)Time of Jesus</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B)Time of Abraham</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C)Time of Adam</span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D)Time of Noah</span>
+    <br><br>
+</selection>
+
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>2.The oldest man as recorded in the Bible lived 969 years. Who was this man?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A): Mahalalel</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Abraham
+</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Enoch</span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Methuselah</span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>3.What relationship was Abraham to Lot?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Father</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Brother</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Nephew
+    </span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Cousin
+    </span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>4.Who was turned into a pillar of salt when she looked back towards Sodom and Gomorrah?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Lot’s mother</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Lot’s daughter</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Lot’s wife</span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Lot’s sister</span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>5.After Jacob wrestled all night, what was his name changed to?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Israel
+</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Samson
+</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Joseph
+    </span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Judah
+    </span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>6.Then God said, Let there be lights in the firmament of the heavens to divide the day from the night and let them be for ___?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Plants and Animals</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) His glory</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Signs and Seasons</span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Man and Woman</span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>7.What was the name of Abram’s son bore by Hagar, Sarai’s handmaiden?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Jacob</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Joseph</span>
+<br><br>
+    
+
+
+<div class="option"></div>
+    <span>(C) Isaac
+    </span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Ishmael</span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>8.Who did the serpent convince to eat from the Tree of the Knowledge of Good and Evil?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Seth
+</span>
+<br><br>
+
+
+<div class="option"></div>
+<span>(B) Adam
+</span>
+<br><br>
+    <div class="option"></div>
+    <span>(C) Eve
+    </span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Abel
+    </span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>9.What is the name of the city where God confused the languages?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Bethel
+</span>
+<br><br>
+<div class="option"></div>
+<span>(B) Babel
+</span>
+<br><br>
+    <div class="option"></div>
+    <span>(C) Babylon</span>
+    <br><br>
+   
+
+  <div class="option"></div>
+    <span>(D) Eiffel
+    </span>
+    <br><br>
+</selection>
+<selection>
+    <div class="que_text"></div>
+    <hr><br>
+    <span>10.He walked faithfully with God, and he was no more, for God took him. Who was this person?
+    </span>
+    <br><br>
+<div class="option_list"></div>
+
+<div class="option"></div>
+<span>(A) Elijah
+</span>
+<br><br>
+<div class="option"></div>
+<span>(B) Enoch
+</span>
+<br><br>
+<div class="option"></div>
+    <span>(C) Elisha
+    </span>
+    <br><br>  
+   <div class="option"></div>
+    <span>(D) Abram
+    </span>
+    <br><br>
+</selection>
+<!--Quiz Box Footer-->
+<footer>
+    <div class="total_que"></div>
+<br>
+<button><a href="https://wa.me/+254774245620" target="_blank"><i class="fa-3xfa-brands fa-whatsapp"><b>click here to send your Answerers</b></i></a><br><br></button>
+
+
+
+<br><br>
+
+</footer>
+</fieldset> 
+</body>
+</html>
+
+
+   

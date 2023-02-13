@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="th.icon">
+<style>
+    .passform{
+    font-family: 'poppins',sans-serif;
+}
+ 
+ body{
+width: 800px;
+height: 700px;
+padding-left: 250px;
+background-color: aqua;
+ }
+ .submit{
+   cursor: pointer;
+ }
+ fieldset{
+    border-radius: 35px;
+    background-color: #c4bbbb;
+    font-size: larger;
+ }
+ button{
+    border-radius: 20px;
+    border-color: black;
+    font-size: large;
+    font-weight: 600;
+ }
+
+     </style>
+     
+    <title>Answerer box</title>
+
+</head>
+    <body>
+<fieldset>
+    
+    <!---Result Box-->
+    <div class="result_box"></div>
+<div class="icon"></div>
+<i class="fas fa-crown"></i>
+<div class="complete_text"><b>These are the correct answerers for the Ten questions, am happy for you if you got all the questions right, if incase you failed you can give it a try for another chance.</div>
+<hr>
+
+<div class="score_text"></div>
+<script>
+    var seconds=0;
+    function displayseconds(){
+        seconds +=1;
+        document.getElementById("secondsdisplay").innerText ="Your time duration is  20 seconds "+seconds+" seconds...";
+    }
+    setInterval(displayseconds,1000);
+    function redirectpage(){
+        window.location = "http://127.0.0.1:5500/2webpage.html"
+    }
+    setTimeout('redirectpage()',9000);
+</script>
+<span>Answerers from question <span>1 </span>to<span> 10</p>DATE:11/FEB/2023</span></b>
+<hr>
+<div class="button"></div>
+<div class="1.">1.A</div>
+<br><br>
+<div class="2.">2.C</div>
+<br><br>
+<div class="3.">3.C</div>
+<br><br>
+<div class="4.">4.C</div>
+<br><br>
+<div class="5.">5.A</div>
+<br><br>
+<div class="6.">6.C</div>
+<br><br>
+<div class="7.">7.D</div>
+<br><br>
+<div class="8.">8.C</div>
+<br><br>
+<div class="9.">9.B</div>
+<br><br>
+<div class="10.">10.A</div>
+<br><br>
+<button class="restart"><a href="2webpage.html">Try Again</a></button>
+
+
+</fieldset>
+    </body>
+</html>
